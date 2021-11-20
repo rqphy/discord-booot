@@ -67,7 +67,6 @@ client.on("messageCreate", async (message) =>
         message.channel.send(`C'est bon DJ fais pété le son ${res.tracks[0].title}`)
 
         if (!player.playing && !player.paused && !player.queue.size) player.play()
-
     }
 
 })
