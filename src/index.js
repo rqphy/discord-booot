@@ -64,7 +64,7 @@ client.on("messageCreate", async (message) =>
         player.connect()
 
         player.queue.add(res.tracks[0])
-        message.channel.send(`C'est bon DJ fais pété le son ${res.tracks[0].title}`)
+        message.channel.send(`\`\`\`C'est bon DJ fais pété le son ${res.tracks[0].title}\`\`\``)
 
         if (!player.playing && !player.paused && !player.queue.size) player.play()
     }
